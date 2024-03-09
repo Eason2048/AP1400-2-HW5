@@ -6,12 +6,15 @@
 #include "cappuccino.h"
 #include "mocha.h"
 
+using namespace ftxui;
+
 int main(int argc, char **argv)
 {
-    if (false) // make false to run unit-tests
+    using namespace std::chrono_literals;
+    if (true) // make false to run unit-tests
     {
-        // debug section
-        
+        Cappuccino* cap = new Cappuccino();
+        cap->brew();
     }
     else
     {
